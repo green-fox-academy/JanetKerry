@@ -13,5 +13,14 @@
 // Print the remainder of 22 divided by 13
 let a: number = 22;
 let b: number = 13;
-35 = a + b;
+
 console.log(a+b);
+
+console.log(a-b);
+
+
+console.log(a/b);
+
+
+console.log(a%b);
+
