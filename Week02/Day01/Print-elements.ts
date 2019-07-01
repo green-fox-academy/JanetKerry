@@ -11,3 +11,9 @@ integers.forEach(function (item) {
     console.log(item)
 });
 
+/*
+for (let i: number = 0; i < integers.length; i++) {
+    console.log(integers[i]);
+}
+*/
+//just another way maybe??
