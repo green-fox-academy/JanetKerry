@@ -10,6 +10,7 @@ const ctx = canvas.getContext('2d');
 
 //ctx.fillStyle = '#ff0000';
 
+export = {};
 ctx.strokeStyle = 'red';
 ctx.beginPath();
 ctx.moveTo(100, 200);
