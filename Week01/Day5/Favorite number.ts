@@ -6,6 +6,4 @@
 // And print it like this: 'My favorite number is: 8'
 
 let favoriteNumber: number = 8;
-console.log(" 'My favorite number is:  8' ");
-
-//console.log('My favorite number is: ' + favoriteNumber);
+console.log('My favorite number is: ' + favoriteNumber);
