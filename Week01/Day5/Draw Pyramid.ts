@@ -11,3 +11,16 @@ let lineCount: number = 4;
 // *******
 //
 // The pyramid should have as many lines as lineCount is
+
+for (let i: number = 1; i <= lineCount; i++) {
+    let collector: string = '';
+    for (let j: number = 1; j <= width; j++) {
+        if (j <= lineCount - i || j > width - (lineCount - i)) {
+            collector += ' ';
+        } else {
+            collector += '*';
+        }
+        //console.log(j);
+    }
+    console.log(collector);
+}

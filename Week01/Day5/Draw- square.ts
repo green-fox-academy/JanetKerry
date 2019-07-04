@@ -12,4 +12,15 @@ let lineCount: number = 6;
 // %%%%%%
 //
 // The square should have as many lines as lineCount is
-© 2019 GitHub, Inc.
+
+for (let i: number = 1; i <= lineCount; i++) {
+    let collector: string = '';
+    for (let j: number = 1; j <= lineCount; j++) {
+        if ((i == 1 || i == lineCount) || (j == 1 || j == lineCount)) {
+            collector += '%';
+        } else {
+            collector += ' ';
+        }
+    }
+    console.log(collector);
+}

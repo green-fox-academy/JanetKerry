@@ -1,7 +1,5 @@
 'use strict';
 
-let number: number = 15;
-
 // Create a program that
 // prints the multiplication table with number
 //
@@ -25,5 +23,5 @@ let number2: number = 1
 
 while (number2 < 11) {
     console.log(number2 + ' * ' + number + ' = ' + number * number2);
-    number2 ++;
+    number2++;
 }
