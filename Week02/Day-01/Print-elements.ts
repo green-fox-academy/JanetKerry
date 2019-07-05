@@ -6,14 +6,11 @@
 
 let integers: number[] = [4, 5, 6, 7];
 console.log(integers);
-
-integers.forEach(function (item) {
-    console.log(item)
-});
-
-/*
 for (let i: number = 0; i < integers.length; i++) {
     console.log(integers[i]);
 }
-*/
-//just another way maybe??
+// -  bonus for using the correct built in array method
+
+integers.forEach(function (value) {
+    console.log(value);
+});
