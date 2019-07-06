@@ -3,5 +3,5 @@
 let massInKg: number = 81.2;
 let heightInM: number = 1.78;
 
-console.info(massInKg / (heightInM ^ 2));
+console.info(massInKg / (heightInM * heightInM));
 
