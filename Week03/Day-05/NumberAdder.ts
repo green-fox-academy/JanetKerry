@@ -1,12 +1,14 @@
 "use strict";
 
 // Write a recursive function that takes one parameter: n and adds numbers from 1 to n.
-function addition(num: number): number {
-  if (num <= 1) {
-    return 1;
-  } else {
-    return num + addition(num - 1);
-  }
-}
+let times = 9;
 
-console.log(addition(5));
+const addNumber = n => {
+  if (n > 0) {
+    return addNumber(n - 1) + n;
+  } else {
+    return 0;
+  }
+};
+
+console.log(addNumber(times));
