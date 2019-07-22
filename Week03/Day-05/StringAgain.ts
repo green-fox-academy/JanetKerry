@@ -1,6 +1,6 @@
 "use strict";
 //Given a string, compute recursively a new string where all the 'x' chars have been removed.
-
+export = {};
 function strings(str: string): string {
   if (str.length === 1) {
     if (str === "x") {
