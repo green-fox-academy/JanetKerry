@@ -2,6 +2,7 @@
 
 // Write a program that draws a
 // diamond like this:
+//
 //    *
 //   ***
 //  *****
@@ -9,6 +10,7 @@
 //  *****
 //   ***
 //    *
+//
 // The diamond should have as many lines as lineCount is
 
 let lineCount: number = 7;
