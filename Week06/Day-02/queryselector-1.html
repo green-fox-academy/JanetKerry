@@ -39,6 +39,10 @@
       //in the 'noBusiness' variable.
       //console.log each of them.
       let noBusiness = Array.from(document.getElementsByClassName('asteroid'));
+      noBusiness.splice(2, 1);
+      console.log(noBusiness[0].innerHTML);
+      console.log(noBusiness[1].innerHTML);
+      console.log(noBusiness[2].innerHTML);
 
       //<div id="class" data-customVariable="noBusiness"
       // document.getElementById('noBusiness').setAttribute("data-customVariable", "bar");
