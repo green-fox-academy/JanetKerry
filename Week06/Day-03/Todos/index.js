@@ -18,11 +18,6 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
 
-//looping over an array
-todos.forEach(function(item, array) {
-  console.log(item);
-});
-
 app.get('/', (req, res) => {
   res.sendFile('views/index.html', { root: __dirname });
 });

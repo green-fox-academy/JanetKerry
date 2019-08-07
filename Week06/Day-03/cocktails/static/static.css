@@ -1,0 +1,32 @@
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: gray;
+}
+
+.cocktailname {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.price1 {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.list {
+    color: turquoise;
+}

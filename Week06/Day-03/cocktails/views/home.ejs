@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome</title>
+    <link href="static/static.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Cocktails</h1>
+    <% for (let i = 0; i < alcoholList.length; i++) { %>
+    <span class='list'><%= alcoholList[i] %></span>
+    <% } %>
+    <table>
+      <thead>
+        <td class='name'>Name</td>
+        <td class='price1'>Price</td>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < cocktails.length; i++) { if( alcohol
+        ===''||cocktails[i].contains.indexOf(alcohol)!==-1) {%>
+        <tr>
+          <td>
+            <span class='cocktailname'><%= cocktails[i].name %></span>
+            <span>
+                    <span>
+                            <%= cocktails[i].contains[0] %>
+                    </span>
+              <% for(j=1; j<cocktails[i].contains.length; j++) { %>
+<span>
+        , <%= cocktails[i].contains[j] %>
+</span>
+              <%} %>
+            </span>
+          </td>
+          <td class= 'price'><%= cocktails[i].price %></td>
+        </tr>
+        <% } }%>
+      </tbody>
+    </table>
+  </body>
+</html>
