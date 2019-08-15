@@ -38,6 +38,23 @@ app.get('/doubling', (req, res) => {
   }
   res.send(result);
 });
+//GET /greeter endpoint
+// query string
+app.get('/greeter', (req, res) => {
+  let name = req.query.name;
+  let title = req.query.title;
+  let greeting = {};
+  if (name == undefined || title == undefined) {
+    greeting = {
+      error: 'Please provide a name and a title!'
+    };
+  } else {
+    greeting = {
+      welcome_message: `Oh, hi there ${name}, my dear ${title}!`
+    };
+  }
+  res.send(greeting);
+});
 
 app.listen(PORT, () => {
   console.log(`The server is up and running on ${PORT}`);
