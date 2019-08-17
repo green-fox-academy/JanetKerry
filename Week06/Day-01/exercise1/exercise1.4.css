@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 50px;
+    height: 100px;
+}
+
+.green {
+    background-color: green;
+    flex-basis: 50px
+}
+
+.yellow {
+    background-color: yellow;
+    order: 1;
+}
+
+.purple {
+    background-color: purple;
+    flex-basis: 50px
+}
