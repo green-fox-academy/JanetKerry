@@ -1,0 +1,25 @@
+/* The items should have fixed sizes
+The purple item should be centered in the yellow area */
+
+.container {
+    display: flex;
+}
+
+.item {
+    width: 600px;
+    height: 300px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+}
