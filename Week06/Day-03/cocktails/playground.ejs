@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Welcome</title>
-    <link href="static/static.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Cocktails</h1>
+<h1>Cocktails</h1>
     <% for (let i = 0; i < alcoholList.length; i++) { %>
     <span class='list'><%= alcoholList[i] %></span>
     <% } %>
@@ -19,7 +11,7 @@
       <tbody>
         <% for (let i = 0; i < cocktails.length; i++) { if( alcohol
         ===''||cocktails[i].contains.indexOf(alcohol)!==-1) {%>
-
+      
         <tr>
           <td>
             <span class='cocktailname'><%= cocktails[i].name%></span>
@@ -37,8 +29,3 @@
           <td class= 'price'><%= cocktails[i].price %></td>
         </tr>
         <% } }%>
-      </tbody>
-      </tr>
-    </table>
-  </body>
-</html>

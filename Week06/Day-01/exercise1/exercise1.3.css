@@ -17,4 +17,5 @@
 
 .purple {
     background-color: purple;
+    order: -1;
 }
