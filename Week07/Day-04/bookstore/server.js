@@ -22,7 +22,8 @@ connection.connect(err => {
 app.get('/titles', (req, res) => {
   connection.query('SELECT book_name FROM book_mast; ', (err, rows) => {
     if (err) {
-      res.send(err);
+      res.status(500);
+      console.log(err);
     } else {
       res.send(rows);
     }
