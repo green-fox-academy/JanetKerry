@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+#picture {
+    width: 800px;
+    height: 450px;
+    background-color: black;
+}
+
+#picture img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#thumbnails {
+    display: flex;
+    height: 100px;
+    width: 800px;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.shwiftyshufle {
+    scrollbar-arrow-color: gray;
+}
+
+#thumbnails img {
+    height: 80px;
+    width: 130px;
+}
