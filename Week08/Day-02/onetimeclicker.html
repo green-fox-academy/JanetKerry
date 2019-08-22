@@ -18,12 +18,13 @@
     <script src="one-time-clicker.js"></script> -->
   </body>
   <script>
-     let timestamp;
-    const btn = document.querySelector("button");
-    btn.addEventListener('click', event =>{
-      if(timestamp == undefined){
-    timestamp = event.timeStamp;
+    let timestamp;
+    const btn = document.querySelector('button');
+    btn.addEventListener('click', event => {
+      if (timestamp == undefined) {
+        timestamp = event.timeStamp;
         console.log(timestamp);
+      }
     });
   </script>
 </html>
