@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>ACCOUNT LOGIN</h2>
-    <form action="/action_page.php">
-      username<br />
-      <input type="text" />
-      <br />
-      password<br />
-      <input type="password" />
-      <br /><br />
-      <div class="button">
-        <button type="submit">Login</button>
-      </div>
-    </form>
-    <p>
-      Forgot password?
-    </p>
+    <div class="look">
+      <h1>account login</h1>
+      <form>
+        <div class="forminput">
+          <label for="username">username</label>
+          <input type="text" name="username" required />
+        </div>
+
+        <div class="forminput">
+          <label for="password">password</label>
+          <input type="password" name="password" required />
+        </div>
+
+        <div class="forgotpassword">
+          <a href="google.com">Forgot password?</a>
+        </div>
+
+        <div class="button">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
