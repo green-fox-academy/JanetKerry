@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contentPanel">
+      <h1>movie selector</h1>
+      <div>
+        <select id="genres" onchange="genreSelected(this.value)">
+          <option value="" disabled selected>Select a genre</option>
+          <option value="Sci-fi">Sci-fi</option>
+          <option value="Drama">Drama</option>
+          <option value="Comedy">Comedy</option>
+        </select>
+        <select id="movie">
+          <option value="" disabled selected>Select a movie</option>
+        </select>
+      </div>
+      <div>The selected movie is: <span id="movieDetails">-</span></div>
+    </div>
+  </body>
+</html>
