@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="contentPanel">
@@ -17,11 +18,13 @@
           <option value="Drama">Drama</option>
           <option value="Comedy">Comedy</option>
         </select>
-        <select id="movie">
+        <select id="movie" onchange="movieSelected(this.value)">
           <option value="" disabled selected>Select a movie</option>
         </select>
       </div>
-      <div>The selected movie is: <span id="movieDetails">-</span></div>
+      <div id="movieDetail">
+        The selected movie is: <span id="movieDetails">-</span>
+      </div>
     </div>
   </body>
 </html>
