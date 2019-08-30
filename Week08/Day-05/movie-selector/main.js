@@ -4,6 +4,9 @@ function genreSelected(selectedGenre) {
   while (movie.children.length > 1) {
     movie.removeChild(movie.lastChild);
   }
+  movie.value = '';
+  movieSelected('');
+
   let movieList = [];
 
   if (selectedGenre === 'Drama') {
@@ -21,5 +24,14 @@ function genreSelected(selectedGenre) {
     option.value = movieList[i];
     option.textContent = movieList[i];
     movie.appendChild(option);
+  }
+}
+//eventlistener for the movie change
+function movieSelected(movieName) {
+  let movieLabel = document.getElementById('movieDetails');
+  if (movieName === '') {
+    movieLabel.textContent = '-';
+  } else {
+    movieLabel.textContent = movieName;
   }
 }
