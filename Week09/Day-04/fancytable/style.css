@@ -1,23 +1,29 @@
 table {
-    background-color: blue;
     border: 2px solid black;
-    width: 100px;
-    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vh;
+    margin: auto;
+    text-align: left;
+    margin-left: 2px
 }
 
 td {
-    border: 2px solid black;
+    border: 1px solid black;
+    border-bottom: 1px solid grey;
+    text-align: left;
+    padding: 8px;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    background: rgb(62, 148, 236);
 }
 
 th {
-    border: 5px solid black;
+    background-color: black;
+    color: white;
 }
 
 td::before {
-    content: "Ft"
+    content: "$"
 }
