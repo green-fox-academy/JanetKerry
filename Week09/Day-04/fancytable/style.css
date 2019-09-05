@@ -1,10 +1,11 @@
 table {
-    border: 2px solid black;
+    border: none;
     font-family: Arial, Helvetica, sans-serif;
     width: 80vh;
-    margin: auto;
     text-align: left;
-    margin-left: 2px
+    box-shadow: 0px 0px 0px 15px blue;
+    margin: 50px;
+    background-color: gray;
 }
 
 td {
@@ -21,14 +22,20 @@ body {
 th {
     background-color: black;
     color: white;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid gray;
+    border-radius: 5px 5px 0px 0px;
 }
 
-td::before {
+td:nth-child(2)::before {
     content: "$"/*TODO: Dollar sign*/
 }
 
-td:nth-child(odd) {
-    border-right: 1px solid grey;
+td {
+    border: 1px solid grey;
 }
 
 tr:nth-child(even) {
