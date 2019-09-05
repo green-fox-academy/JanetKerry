@@ -6,15 +6,21 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*check on text font and align*/
+
 .side {
     background-color: yellow;
     height: 100px;
-    text-align: center;
     margin: 5px;
+    text-align: center;
 }
 
 .middle {
     background-color: green;
     text-align: center;
     margin: 5px;
+}
+
+.body {
+    color: antiquewhite;
 }
