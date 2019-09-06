@@ -1,17 +1,73 @@
-main {
-    padding: 10px;
-    background-color: blue;
-    margin: 50ox;
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-.button1 {
-    background-color: red;
+body {
+    height: 100vh;
+    background-color: #2f3060;
+    display: grid;
+    place-items: center;
 }
 
-.button2 {
-    background-color: lightskyblue;
+.main {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
-.button3 {
-    background-color: green;
+button {
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 15px;
+    margin: 5%;
+    color: white;
+}
+
+.red {
+    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    border-top: 3px solid #5577bf;
+    background: linear-gradient(#ac0909, #690b0b);
+}
+
+.green {
+    box-shadow: 0px 5px 0px 0px rgb(8, 158, 28);
+    border-top: 3px solid #5577bf;
+    background: linear-gradient(#48a848, #379343);
+}
+
+.light {
+    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    border-top: 3px solid #5577bf;
+    background: linear-gradient(#489aa8, #373d93);
+}
+
+.black {
+    box-shadow: 0px 5px 0px 0px rgb(26, 28, 36);
+    border-top: 3px solid #46494e;
+    background: linear-gradient(#030303, #1d1b1b);
+}
+
+.white {
+    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    border-top: 3px solid #5577bf;
+    background: linear-gradient(#d0d5e0, #f2f3f7);
+}
+
+.blue {
+    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    border-top: 3px solid #5577bf;
+    background: linear-gradient(#4867a8, #375393);
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    filter: brightness(90%);
 }
