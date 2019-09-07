@@ -1,6 +1,25 @@
 <%- include('partials/head'); %>
 <body>
   <%- include('partials/header'); %>
+
+    <div>
+        
+    </div>
+    
+    <main>
+        <div class ="container">
+
+            <% for (let i = 0; i < results.posts.length; i++) { %>
+            <div >
+                <div class="grid-item"><%= results.posts[i].score %></div>
+                <div class="grid-item"><h2><%= results.posts[i].title %></h2></div>
+                <div class="grid-item"><%= results.posts[i].user %></div>
+            </div>
+            <%}%>
+
+        </div>
+    </main>
+
   <%- include('partials/footer'); %>
 </body>
 </html>
