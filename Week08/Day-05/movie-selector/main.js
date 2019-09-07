@@ -2,7 +2,7 @@
 function genreSelected(selectedGenre) {
   let movie = document.getElementById('movie');
   while (movie.children.length > 1) {
-    movie.removeChild(movie.lastChild); //removes last child and remains with one
+    movie.removeChild(movie.lastChild);
   }
   movie.value = '';
   movieSelected('');
