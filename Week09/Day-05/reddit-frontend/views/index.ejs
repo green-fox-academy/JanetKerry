@@ -9,11 +9,21 @@
     <main>
         <div class ="container">
 
-            <% for (let i = 0; i < results.posts.length; i++) { %>
-            <div >
-                <div class="grid-item"><%= results.posts[i].score %></div>
-                <div class="grid-item"><h2><%= results.posts[i].title %></h2></div>
-                <div class="grid-item"><%= results.posts[i].user %></div>
+            <% for (let i = 0; i < results.length; i++) { %>
+            <div class="topicHead">
+                <div class="grid-item">
+                    <a href="void(0);">up</a>
+                    <%= results[i].score %></div>
+                    <a href="void(0);">down</a>
+                <div class="grid-item"><h2><%= results[i].title %></h2></div>
+                <div class="grid-item">
+                    submitted
+                    <%= Math.floor(results[i].secondsPassed / 3600000) %>
+                    hours ago by
+                    <%= results[i].user %>
+                    0
+                    comments
+                </div>
             </div>
             <%}%>
 
