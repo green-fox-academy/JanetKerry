@@ -11,11 +11,10 @@ body {
     place-items: center;
 }
 
-.main {
+.container {
     width: 50%;
     height: 50%;
     display: grid;
-    /* TODO*/
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
@@ -30,37 +29,37 @@ button {
 }
 
 .red {
-    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    box-shadow: 0px 5px 0 0 rgba(38, 57, 109, 1);
     border-top: 3px solid #5577bf;
     background: linear-gradient(#ac0909, #690b0b);
 }
 
 .green {
-    box-shadow: 0px 5px 0px 0px rgb(8, 158, 28);
+    box-shadow: 0px 5px 0 0 rgb(8, 158, 28);
     border-top: 3px solid #5577bf;
     background: linear-gradient(#48a848, #379343);
 }
 
 .light {
-    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    box-shadow: 0p 5px 0 0 rgba(38, 57, 109, 1);
     border-top: 3px solid #5577bf;
     background: linear-gradient(#489aa8, #373d93);
 }
 
 .black {
-    box-shadow: 0px 5px 0px 0px rgb(26, 28, 36);
+    box-shadow: 0 5px 0 0 rgb(26, 28, 36);
     border-top: 3px solid #46494e;
     background: linear-gradient(#030303, #1d1b1b);
 }
 
 .white {
-    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    box-shadow: 0 5px 0 0 rgba(38, 57, 109, 1);
     border-top: 3px solid #5577bf;
     background: linear-gradient(#d0d5e0, #f2f3f7);
 }
 
 .blue {
-    box-shadow: 0px 5px 0px 0px rgba(38, 57, 109, 1);
+    box-shadow: 0 5px 0 0 rgba(38, 57, 109, 1);
     border-top: 3px solid #5577bf;
     background: linear-gradient(#4867a8, #375393);
 }
