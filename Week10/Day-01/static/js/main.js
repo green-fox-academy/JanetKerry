@@ -22,30 +22,30 @@ const playlists = () => {
 };
 playlists();
 
-const tracks = playlistId => {
+const playlistplaylistTracks = playlistId => {
   xhr.onload = () => {
     if (xhr.status === 200) {
-      const tracks = document.querySelector('.tracks');
-      while (tracks.childElementCount != 0) {
-        tracks.removeChild(tracks.lastChild);
+      const playlistTracks = document.querySelector('.playlistTracks');
+      while (playlistTracks.childElementCount != 0) {
+        playlistTracks.removeChild(playlistTracks.lastChild);
       }
 
       const response = JSON.parse(xhr.responseText);
       response.forEach(item => {
         const div = document.createElement('div');
         div.textContent = item.title;
-        tracks.appendChild(div);
+        playlistTracks.appendChild(div);
         div.onclick = () => {};
       });
     }
   };
   if (playlistId) {
-    xhr.open('GET', '/playlists_tracks?playlist_id=' + playlistId);
+    xhr.open('GET', `/playlists_playlistTracks?playlist_id=${playlistId}`);
   } else {
-    xhr.open('GET', '/playlists_tracks');
+    xhr.open('GET', '/playlists_playlistTracks');
   }
   xhr.send();
 };
 
 playlistsId();
-tracks();
+playlistTracks();
