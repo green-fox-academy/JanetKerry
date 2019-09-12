@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   //creating connection
   host: 'localhost',
   user: 'root',
-  password: 'Keruborocks247',
+  password: 'password',
   database: 'foxplayer'
 });
 
@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/playlist', (req, res) => {
-  // let playlistPromise = new Promise((resolve, reject) => {--why is it even here??????
   connection.query(`SELECT * FROM playlists;`, (err, rows) => {
     if (err) {
       res.status(500);
@@ -31,46 +30,61 @@ app.get('/playlist', (req, res) => {
     }
   });
 });
-//});
 app.post('/playlist', (req, res) => {
   connection.query(
-    `INSERT INTO playlists (playlist,system) VALUES ('${req.post.playlist}',0);`,
+    `INSERT INTO playlists (playlist,system) VALUES (?, 0);`,
+    req.post.playlist,
     (err, rows) => {
       if (err) {
-        res.status(500);
+        res.sendstatus(500);
+        -//add send after.
         console.log(err);
       } else {
-        res.status(200);
+        res.sendstatus(200);
       }
     }
   );
 });
 
 app.delete('/playlist', (req, res) => {
-  connection.query(
-    `DELETE FROM playlists WHERE id= ${req.query.id} and system <>1;`,
-    (err, rows) => {
-      if (err) {
-        res.status(500);
-        console.log(err);
-        res.send(JSON.stringify({ error: 'Database error occured!' }));
-      } else {
-        res.status(200);
+  if (req.query.id === undefined || isNaN(Number.parseInt(req.query.id))) {
+    res.sendStatus(400);
+  } else {
+    connection.query(
+      `DELETE FROM playlists WHERE id= ${req.query.id} and system <>1;`, //validate variables
+      (err, rows) => {
+        if (err) {
+          res.sendStatus(500);
+          console.log(err);
+          res.send(); //no params just send
+        } else {
+          res.sendStatus(200);
+        }
       }
-    }
-  );
+    );
+  }
 });
 
 app.get('/playlists_tracks', (req, res) => {
   let query = 'SELECT * FROM tracks';
-  if (req.query && req.query.playlist_id) {
-    query = `${query} WHERE playlist_id=${req.query.playlist_id}`;
+  if (
+    req.query &&
+    req.query.playlist_id &&
+    !isNaN(Number.parseInt(req.query.playlist_id))
+  ) {
+    query += ` WHERE playlist_id=${req.query.playlist_id}`;
   }
   query += ';';
 
   connection.query(query, (err, rows) => {
-    res.send(rows);
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      res.send(); //no params just send
+    } else {
+      res.send(rows);
+    }
   });
 });
 
-app.listen(PORT, () => console.log(`App is listening on ${PORT}`));
+app.listen(PORT, () => console.log(`App is listening on ${PORT}`)); //postman, validation, question mark, send resp
