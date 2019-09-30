@@ -1,0 +1,12 @@
+<div class="weatherCitySummary">
+  <span>
+    <span>{{ _city }}</span>
+    <span>{{ _state }} </span>
+  </span>
+  <span>{{ _temperature }}&deg;C</span>
+  <span *ngIf="_cloudy"
+    ><img src="assets/cloudy.png" class="featureImage"
+  /></span>
+  <span *ngIf="_sunny"><img src="assets/sunny.png" class="featureImage"/></span>
+  <span *ngIf="_rainy"><img src="assets/rainy.png" class="featureImage"/></span>
+</div>

@@ -1,0 +1,9 @@
+.weatherCitySummary {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    width: 400px;
+}
+
+.featureImage {
+    width: 50px;
+}
