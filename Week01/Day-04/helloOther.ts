@@ -6,9 +6,7 @@
 // Hello, Mary!
 // Hello, Joe!
 
-export = {}
-
-let names = ['Eszter!', 'Adam!', 'Ege!'];
+let names = ['Esther!', 'Mary!', 'Joe!'];
 
 for (let i = 0; i < names.length; i++) {
     console.log('Hello ' + names[i]);
